@@ -34,3 +34,7 @@ Now I found the root cause as shown in the image below. I didn't setup the **DNS
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d47add40-9710-43d4-93c8-31ac915008c5" />
 
 I can either run `tailscale up --accept-dns=false` or set things **Manually**. I choose the **manual** way to familiarize my self more on setting up DNS Domain and DNS Server using IP addresses.
+
+## Hardening SSH
+
+I am still connecting to my homelab via `ssh` through local network, because I think it is still a good practice. I set `PasswordAuthentication`, `PermitRootLogin`, and `PermitEmptyPasswords` to `no`. I also created a `~/.ssh/config` file on my own device to connect through my homelab and it's corresponding nodes.
