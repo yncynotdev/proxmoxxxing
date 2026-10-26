@@ -38,3 +38,10 @@ I can either run `tailscale up --accept-dns=false` or set things **Manually**. I
 ## Hardening SSH
 
 I am still connecting to my homelab via `ssh` through local network, because I think it is still a good practice. I set `PasswordAuthentication`, `PermitRootLogin`, and `PermitEmptyPasswords` to `no`. I also created a `~/.ssh/config` file on my own device to connect through my homelab and it's corresponding nodes.
+
+## Local Self Host
+
+I wanted to self-host my documentation for homelab, but I kept wondering how can it pull changes automatically and run it? I stumble across **GitHub Actions Runners**. I set it up on my **Fedora Server**. I can now self-host web pages as seen in the image below. I also add another documentation page for other projects that requires some documentation. I used [Astro](https://astro.build/) together with [Viteplus](https://viteplus.dev/) to create these web documentaton pages.
+
+<img width="1890" height="1002" alt="image" src="https://github.com/user-attachments/assets/cf638b3c-5708-4871-94e8-0d4b3978b27a" />
+
